@@ -1,53 +1,87 @@
-**CCTV Stranger Detector**
+Here’s a clean, professional **README.md** you can use (polished, structured, and GitHub-ready):
 
-A real-time intelligent surveillance system that integrates embedded hardware, computer vision, and a Flutter-based mobile application.
+---
 
-**Overview**
+# 📷 CCTV Stranger Detector
 
-This project implements a smart CCTV system using a Raspberry Pi 4 Model B and a camera module for real-time face detection and recognition. The system processes live video frames using Python and OpenCV to classify individuals as known or unknown based on a trained face dataset.
+A real-time intelligent surveillance system that integrates embedded hardware, computer vision, and a Flutter-based mobile application to detect and alert users of unknown individuals.
 
-When an unregistered face is detected, the system automatically triggers an alert and sends a notification to a Flutter mobile application. The mobile app enables remote monitoring, alert management, and access to detection logs.
+---
 
-**Tech Stack**
+## 🧠 Overview
 
-**Hardware**
+The **CCTV Stranger Detector** is a smart security system built using a **Raspberry Pi 4 Model B** and a camera module for real-time face detection and recognition.
 
-- Raspberry Pi 4 Model B
+The system captures live video frames and processes them using **Python** and **OpenCV** to classify faces as **known** or **unknown** based on a trained dataset.
 
-- Raspberry Pi Camera Module
+When an unrecognized (stranger) face is detected:
 
-**Backend / Processing**
+* 🚨 An alert is triggered instantly
+* 📲 A notification is sent to the mobile application
+* 🗂️ The detection event is logged for future reference
 
-- Python
+The accompanying **Flutter mobile app** allows users to monitor live feeds, receive alerts, and manage detection logs remotely.
 
-- OpenCV
+---
 
-- Real-time video frame processing
+## ⚙️ Tech Stack
 
-**Mobile Application**
+### 🔌 Hardware
 
-- Flutter (cross-platform)
+* Raspberry Pi 4 Model B
+* Raspberry Pi Camera Module
 
-- Real-time alert integration
+### 🧠 Backend / Processing
 
-**Communication**
+* Python
+* OpenCV
+* Real-time video frame processing
 
-- RESTful API / network-based communication between Raspberry Pi and mobile app
+### 📱 Mobile Application
 
-**Key Features**
+* Flutter (Cross-platform: Android & iOS)
+* Real-time alert notifications
 
-- Real-time face detection
+### 🔗 Communication
 
-- Known vs unknown face classification
+* RESTful API
+* Network-based communication between Raspberry Pi and mobile app
 
-- Automated stranger alert system
+---
 
-- Live CCTV monitoring via mobile app
+## 🚀 Features
 
-- Remote access and monitoring
+* 🎥 Real-time face detection
+* 🧑‍🤝‍🧑 Known vs unknown face classification
+* 🚨 Automated stranger alert system
+* 📱 Live CCTV monitoring via mobile app
+* 🌐 Remote access and monitoring
+* 🗃️ Detection event logging
 
-- Detection event logging
+---
 
-**Objective**
+## 🏗️ System Architecture
 
-To design and develop a cost-effective, scalable, and intelligent security solution by integrating IoT, computer vision, and cross-platform mobile development into a unified system.
+```
+Camera Module → Raspberry Pi → Face Detection (OpenCV)
+                    ↓
+          Face Recognition Model
+                    ↓
+        Known / Unknown Classification
+                    ↓
+     REST API → Flutter Mobile App
+                    ↓
+      Alerts + Logs + Live Monitoring
+```
+
+---
+
+## 🎯 Objective
+
+To design and develop a **cost-effective, scalable, and intelligent security solution** by integrating:
+
+* IoT (Raspberry Pi)
+* Computer Vision (Face Detection & Recognition)
+* Mobile Development (Flutter)
+
+into a unified real-time surveillance system.
