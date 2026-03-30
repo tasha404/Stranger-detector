@@ -42,11 +42,6 @@ The accompanying **Flutter mobile app** allows users to monitor live feeds, rece
 * Flutter (Cross-platform: Android & iOS)
 * Real-time alert notifications
 
-### 🔗 Communication
-
-* RESTful API
-* Network-based communication between Raspberry Pi and mobile app
-
 ---
 
 ## 🚀 Features
